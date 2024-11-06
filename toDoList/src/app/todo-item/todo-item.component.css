@@ -1,0 +1,59 @@
+.todoList {
+    width: 400px;
+}
+
+.task {
+    padding-left: 0;
+}
+
+.duration {
+    padding-left: 5px;
+}
+
+.todoItem {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    display: flex;  
+    align-items: center;  
+}
+
+Button.complete {
+    margin-right: 8px;
+    background-color: white;
+    color: #ff69b4;
+    border-color: #ff69b4;
+    border-radius: 7px;
+    border-style: solid;
+}
+
+Button.complete:hover {
+    color: #ff0088;
+    border-color: #ff0088;
+    cursor: pointer;
+}
+
+Button.remove {
+    color: black;
+    background-color: white;
+    border-color: white;
+    border-style: none;
+    margin-left: auto; 
+}
+
+Button.remove:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.priority {
+    margin-left: 5px;
+    font-size: small;
+}
+
+span.highPriority {
+    color: crimson;
+}
+
+.lowPriority {
+    color: darkgoldenrod;
+}

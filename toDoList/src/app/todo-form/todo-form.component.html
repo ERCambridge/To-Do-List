@@ -1,0 +1,16 @@
+<div class="todoForm">
+    <p class="taskTitle">Enter a new task:</p>
+    <input class="taskInput" [(ngModel)]="newTodo.task" type="text"/>
+    <p class="durationTitle">How many hours do you estimate?</p>
+    <input class="durationInput" [(ngModel)]="newTodo.duration" type="number" placeholder="Duration (hours)" min="0.25"/>
+    <p class="priorityTitle">What is the priority level?</p>
+    <input class="priority" type="radio" name="priorityChoice" [(ngModel)]="newTodo.priority" value="high" id="high"/>
+    <label for="high">high</label>
+    <input class="priority"  type="radio" name="priorityChoice" [(ngModel)]="newTodo.priority" value="medium" id="medium"/>
+    <label for="medium">medium</label>
+    <input class="priority"  type="radio" name="priorityChoice" [(ngModel)]="newTodo.priority" value="low" id="low"/>
+    <label for="low">low</label>
+    <p></p>
+    <button (click)="addTask()">Add</button>
+</div>
+

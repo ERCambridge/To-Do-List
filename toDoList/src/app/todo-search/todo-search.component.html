@@ -1,0 +1,3 @@
+<div class="searchBar">
+    <input class="searchField" type="text" placeholder="Filter your to-dos" [(ngModel)]="searchRequest" (keydown.enter)="searchTask()" (click)="clearSearch(); searchRequest =''">
+</div>

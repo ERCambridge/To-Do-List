@@ -1,0 +1,14 @@
+<div class="todoApp">
+    <h1>To-Do List</h1>
+    <h4>A place to store your todos</h4>
+    <app-todo-search (search)="searchTask($event)"></app-todo-search>
+    <ol>      
+        <div class="aTodo"  *ngFor="let aTodo of toDoList; let i = index" [ngClass]="{completed:aTodo.completed}" >
+        <li *ngIf="aTodo.visible === true">           
+            <app-todo-item [todo]="aTodo" (complete)="completeTask(i)" (remove)="removeTask(i)"/>           
+        </li>
+        </div>
+
+    </ol>
+    <app-todo-form (save)="addTask($event)"></app-todo-form>
+</div>
